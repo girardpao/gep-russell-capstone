@@ -3,6 +3,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import styles from "../pages/Homepage.module.css";
+import About from "../components/About";
 
 const Homepage = () => {
   return (
@@ -26,6 +27,7 @@ const Homepage = () => {
           <Button variant="success">Book Now</Button>
         </Container>
       </section>
+      <About />
     </div>
   );
 };

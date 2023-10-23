@@ -4,6 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import Stack from "react-bootstrap/Stack";
+import styles from "../pages/ContactUs.module.css";
 
 const ContactUs = () => {
   return (
@@ -24,6 +25,12 @@ const ContactUs = () => {
               <div>Tel: +63 2 911 7359</div>
               <div>(Globe) +63 927 712 4349</div>
               <div>(Sun) +63 943 706 5083</div>
+              <a href="https://www.facebook.com/" target="blank">
+                <i
+                  className="fa-brands fa-square-facebook"
+                  id={styles.facebook}
+                ></i>
+              </a>
             </Stack>
           </Col>
           <Col>
