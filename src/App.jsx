@@ -7,7 +7,6 @@ const App = () => {
   return (
     <div>
       <PageNav />
-
       <Routes>
         {routes.map((route, index) => {
           return (
