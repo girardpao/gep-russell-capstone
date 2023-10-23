@@ -2,11 +2,12 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
+import styles from "./PageNav.module.css";
 
 const PageNav = () => {
   return (
     <div>
-      <Navbar expand="lg" className="bg-success bg-gradient">
+      <Navbar expand="lg" className="bg-success bg-gradient" id={styles.navbar}>
         <Container fluid>
           <Navbar.Brand as={Link} to="/">
             Pare Bus Lines

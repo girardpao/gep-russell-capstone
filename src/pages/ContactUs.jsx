@@ -8,7 +8,7 @@ import Stack from "react-bootstrap/Stack";
 const ContactUs = () => {
   return (
     <div>
-      <Container>
+      <Container className="mt-5">
         <Row>
           <Col>
             <Stack gap={3}>
