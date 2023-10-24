@@ -3,6 +3,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import styles from "./Hero.module.css";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -22,8 +23,9 @@ const Hero = () => {
               </p>
             </Col>
           </Row>
-          <Row>{/* <button className="btn">Book Now</button> */}</Row>
-          <Button variant="success">Book Now</Button>
+          <Button variant="success" as={Link} to="/booking">
+            Book Now
+          </Button>
         </Container>
       </section>
     </div>

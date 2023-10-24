@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import routes from "./Routes";
 import PageNav from "./components/PageNav";
+import Footer from "./components/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
           );
         })}
       </Routes>
+      <Footer />
     </div>
   );
 };
