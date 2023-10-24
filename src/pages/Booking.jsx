@@ -1,5 +1,10 @@
+import BookingHero from "../components/Booking-hero";
 const Booking = () => {
-  return <div>Booking</div>;
+  return (
+    <div>
+      <BookingHero />
+    </div>
+  );
 };
 
 export default Booking;
