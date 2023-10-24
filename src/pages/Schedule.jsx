@@ -1,10 +1,12 @@
 import Container from "react-bootstrap/Container";
 import Table from "react-bootstrap/Table";
+import Sched from "../components/Schedule-hero";
 
 const Schedule = () => {
   return (
     <div>
-      <h2 className="text-center mt-5">Daily Bus Schedule</h2>
+      {/* <h2 className="text-center mt-5">Daily Bus Schedule</h2> */}
+      <Sched />
       <Container>
         <h3 className="mt-5">Cubao to Baguio Departure</h3>
         <Table striped bordered hover>
