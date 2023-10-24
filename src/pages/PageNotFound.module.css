@@ -1,1 +1,7 @@
+.notFound {
+  font-weight: 900;
+}
 
+#error {
+  height: 500px;
+}
