@@ -40,7 +40,7 @@ const bookingForm = () => {
           </Form.Group>
         </Row>
         <div className="text-center">
-          <Button variant="success">Book Now</Button>
+          <Button variant="success">Proceed</Button>
         </div>
       </Container>
     </div>

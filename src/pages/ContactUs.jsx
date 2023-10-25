@@ -8,7 +8,7 @@ import styles from "../pages/ContactUs.module.css";
 
 const ContactUs = () => {
   return (
-    <div>
+    <div className={styles.contact}>
       <Container className="mt-5">
         <Row>
           <Col>

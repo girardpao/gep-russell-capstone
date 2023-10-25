@@ -10,7 +10,9 @@ const Hero = () => {
         <Container fluid>
           <Row>
             <Col>
-              <h1 className="aboutTitle text-center">Daily Bus Schedule</h1>
+              <h1 className="schedTitle text-center" id={styles.sched}>
+                Daily Bus Schedule
+              </h1>
             </Col>
           </Row>
         </Container>

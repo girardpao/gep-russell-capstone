@@ -9,18 +9,15 @@ const Hero = () => {
   return (
     <div>
       <section className={styles.hero}>
-        <Container fluid>
+        <Container fluid className="text-center">
           <Row>
             <Col>
-              <h1 className="aboutTitle">PARE Bus Lines</h1>
+              <h1 className="aboutTitle mb-4">Safe Travel Always</h1>
             </Col>
           </Row>
           <Row>
             <Col>
-              <p className="aboutDescription">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam,
-                repellat!
-              </p>
+              <p className="aboutDescription">YOUR BUDDY GOING NORTH</p>
             </Col>
           </Row>
           <Button variant="success" as={Link} to="/booking">
