@@ -52,7 +52,7 @@ const ContactUs = () => {
                 <Form.Control as="textarea" rows={3} />
               </Form.Group>
             </Form>
-            <Button variant="success">Success</Button>
+            <Button variant="success">Submit</Button>
           </Col>
         </Row>
       </Container>
