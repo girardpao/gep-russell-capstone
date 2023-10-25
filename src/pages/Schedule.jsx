@@ -363,37 +363,37 @@ const Schedule = () => {
           </thead>
           <tbody>
             <tr>
-              <th scope="row">11:00 AM</th>
+              <th scope="row">12:00 PM</th>
               <td>Pasay</td>
               <td>Regular</td>
               <td>600</td>
             </tr>
             <tr>
-              <th scope="row">1:00 PM</th>
+              <th scope="row">2:00 PM</th>
               <td>Pasay</td>
               <td>Premium</td>
               <td>700</td>
             </tr>
             <tr>
-              <th scope="row">3:00 PM</th>
+              <th scope="row">4:00 PM</th>
               <td>Pasay</td>
               <td>Premium</td>
               <td>900</td>
             </tr>
             <tr>
-              <th scope="row">1:00 AM</th>
+              <th scope="row">2:00 AM</th>
               <td>Pasay</td>
               <td>Regular</td>
               <td>600</td>
             </tr>
             <tr>
-              <th scope="row">3:00 AM</th>
+              <th scope="row">4:00 AM</th>
               <td>Pasay</td>
               <td>Premium</td>
               <td>700</td>
             </tr>
             <tr>
-              <th scope="row">5:00 AM</th>
+              <th scope="row">6:00 AM</th>
               <td>Pasay</td>
               <td>Premium</td>
               <td>900</td>
