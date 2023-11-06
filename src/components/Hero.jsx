@@ -20,7 +20,7 @@ const Hero = () => {
               <p className="aboutDescription">YOUR BUDDY GOING NORTH</p>
             </Col>
           </Row>
-          <Button variant="success" as={Link} to="/booking">
+          <Button as={Link} to="/booking" className={styles.bookNow}>
             Book Now
           </Button>
         </Container>

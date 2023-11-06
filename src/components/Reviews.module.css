@@ -1,11 +1,41 @@
-.kayh1 {
-  height: 150px;
+.kayh,
+.pao,
+.russ {
+  height: 120px;
 }
 
-.kayh2 {
-  height: 150px;
+.imgText {
+  width: 95%;
+  height: 300px;
+  display: block;
+  text-align: center;
+  padding: 40% 5%;
+  background: #004963;
+  color: #fff;
+  border-radius: 15px;
 }
 
-.kayh3 {
-  height: 150px;
+.imgText h2 {
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.imgText p {
+  font-size: 15px;
+}
+
+.singleBox {
+  position: relative;
+}
+
+.imgArea {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 5px solid #fff;
+  overflow: hidden;
+  top: 15px;
+
+  border-radius: 50%;
 }

@@ -7,5 +7,12 @@
   padding: 0 10%;
   background-repeat: no-repeat;
   background-size: cover;
-  color: #fff;
+  color: #004963;
+  font-weight: 700;
+}
+
+.bookNow {
+  background-color: #bd5604 !important;
+  border: #bd5604 !important;
+  font-size: 20px !important;
 }

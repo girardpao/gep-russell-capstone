@@ -13,7 +13,7 @@ const About = () => {
           </Col>
         </Row>
         <Row>
-          <Col>
+          <Col className={styles.paragraph}>
             <p>
               We are dedicated to serve and rise to prominence as one of the
               leading provincial transportation operators in the country. We

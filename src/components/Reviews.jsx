@@ -3,8 +3,8 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 // import Card from "react-bootstrap/Card";
 import kayh from "../assets/kayh.jpg";
-import kayh2 from "../assets/kayh2.jpg";
-import kayh3 from "../assets/kayh3.jpg";
+import russ from "../assets/russ.jpg";
+import pao from "../assets/gep.jpg";
 import Carousel from "react-bootstrap/Carousel";
 import styles from "./Reviews.module.css";
 
@@ -48,55 +48,55 @@ const Reviews = () => {
       <Container className="container text-center mt-5">
         <Row className="row">
           <Carousel fade>
-            <Carousel.Item className="d-flex">
+            <Carousel.Item className="d-flex gap-2">
               <Col md={4}>
-                <div className="single-box"></div>
-                <div className="img-area">
-                  <img src={kayh} className={styles.kayh1} />
+                <div className={styles.singleBox}></div>
+                <div className={styles.imgArea}>
+                  <img src={kayh} className={styles.kayh} />
                 </div>
-                <div className="img-text">
-                  <h2>Person One</h2>
+                <div className={styles.imgText}>
+                  <h2>Kayh</h2>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptates quasi corrupti neque consequuntur, excepturi
-                    enim.
+                    Their punctual service, friendly staff, and well-maintained
+                    buses ensure a comfortable and stress-free travel
+                    experience.
                   </p>
                 </div>
               </Col>
               <Col md={4}>
-                <div className="single-box"></div>
-                <div className="img-area">
-                  <img src={kayh2} className={styles.kayh2} />
+                <div className={styles.singleBox}></div>
+                <div className={styles.imgArea}>
+                  <img src={russ} className={styles.russ} />
                 </div>
-                <div className="img-text">
-                  <h2>Person Two</h2>
+                <div className={styles.imgText}>
+                  <h2>Russ</h2>
                   <p>
-                    ipsum dolor sit amet consectetur adipisicing elit. Rem
-                    voluptate culpa eaque commodi animi voluptas corporis.
+                    Driver was outstanding! Professional and friendly as he
+                    ensured a smooth and safe journey.
                   </p>
                 </div>
               </Col>
-              <Col cmd={4}>
-                <div className="single-box"></div>
-                <div className="img-area">
-                  <img src={kayh3} className={styles.kayh3} />
+              <Col md={4}>
+                <div className={styles.singleBox}></div>
+                <div className={styles.imgArea}>
+                  <img src={pao} className={styles.pao} />
                 </div>
-                <div className="img-text">
-                  <h2>Person Three</h2>
+                <div className={styles.imgText}>
+                  <h2>Pao</h2>
                   <p>
-                    dolor sit amet consectetur adipisicing elit. Quos eveniet
-                    dolor natus sunt, eaque vitae voluptatem. Modi.
+                    Ticket price is reasonable. A remarkable choice for
+                    cost-conscious travelers seeking peace of mind on the road.
                   </p>
                 </div>
               </Col>
             </Carousel.Item>
-            <Carousel.Item className="d-flex">
+            <Carousel.Item className="d-flex gap-2">
               <Col md={4}>
-                <div className="single-box"></div>
-                <div className="img-area">
-                  <img src={kayh3} className={styles.kayh1} />
+                <div className={styles.singleBox}></div>
+                <div className={styles.imgArea}>
+                  <img src={pao} className={styles.pao} />
                 </div>
-                <div className="img-text">
+                <div className={styles.imgText}>
                   <h2>Person four</h2>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -106,11 +106,11 @@ const Reviews = () => {
                 </div>
               </Col>
               <Col md={4}>
-                <div className="single-box"></div>
-                <div className="img-area">
-                  <img src={kayh} className={styles.kayh2} />
+                <div className={styles.singleBox}></div>
+                <div className={styles.imgArea}>
+                  <img src={kayh} className={styles.kayh} />
                 </div>
-                <div className="img-text">
+                <div className={styles.imgText}>
                   <h2>Person five</h2>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -119,12 +119,12 @@ const Reviews = () => {
                   </p>
                 </div>
               </Col>
-              <Col cmd={4}>
-                <div className="single-box"></div>
-                <div className="img-area">
-                  <img src={kayh2} className={styles.kayh3} />
+              <Col md={4}>
+                <div className={styles.singleBox}></div>
+                <div className={styles.imgArea}>
+                  <img src={russ} className={styles.russ} />
                 </div>
-                <div className="img-text">
+                <div className={styles.imgText}>
                   <h2>Person six</h2>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
