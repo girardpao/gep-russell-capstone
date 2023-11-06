@@ -6,7 +6,7 @@ import styles from "./About.module.css";
 const About = () => {
   return (
     <div className="d-flex align-items-center" id={styles.about}>
-      <Container fluid="md text-center">
+      <Container fluid="md text-center my-5">
         <Row>
           <Col>
             <h3 className="mb-3">Your Travel Companion</h3>

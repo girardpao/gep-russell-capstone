@@ -4,34 +4,37 @@ import Navbar from "react-bootstrap/Navbar";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import styles from "./PageNav.module.css";
-import Logo from "../assets/bus-logo.jpg";
+import Logo from "../assets/bus-logo.png";
 
 const PageNav = () => {
   return (
-    <div>
-      <Navbar expand="lg" className="bg-success bg-gradient" id={styles.navbar}>
-        <Container fluid>
-          <Navbar.Brand as={Link} to="/" className={styles.logoText}>
-            <img src={Logo} className={styles.parelogo} alt="Pare-logo" />
-            Pare Bus Lines
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="navbarScroll" className={styles.nav} />
-          <Navbar.Collapse id="navbarScroll">
-            <Nav className="me-auto my-2 my-lg-0" navbarScroll>
-              <Nav.Link as={Link} to="/schedule">
-                Schedule
-              </Nav.Link>
-              <Nav.Link as={Link} to="/contactUs">
-                Contact Us
-              </Nav.Link>
-              <Button variant="dark" as={Link} to="/booking">
-                Book Now
-              </Button>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-    </div>
+    <Navbar expand="lg" className="bg-gradient" id={styles.navbar}>
+      <Container>
+        <Navbar.Brand as={Link} to="/" className={styles.logoText}>
+          <img src={Logo} className={styles.parelogo} alt="Pare-logo" />
+          PARE BUS LINES
+        </Navbar.Brand>
+
+        <Navbar.Toggle
+          aria-controls="navbarScroll"
+          className={styles.nav}
+          id={styles.mobileNav}
+        />
+        <Navbar.Collapse id="navbarScroll">
+          <Nav className="ms-auto my-2">
+            <Nav.Link as={Link} to="/schedule">
+              Schedule
+            </Nav.Link>
+            <Nav.Link as={Link} to="/contactUs">
+              Contact Us
+            </Nav.Link>
+            <Button variant="dark" as={Link} to="/booking">
+              Book Now
+            </Button>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 };
 
