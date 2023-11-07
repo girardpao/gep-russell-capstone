@@ -1,5 +1,5 @@
 .hero {
-  background-image: url(../assets/baguio.jpg);
+  background-image: url(../assets/mines-view.jpeg);
   background-position: center;
   height: 510px;
   display: flex;
@@ -7,8 +7,9 @@
   padding: 0 10%;
   background-repeat: no-repeat;
   background-size: cover;
-  color: #004963;
+  color: #fff;
   font-weight: 700;
+  background-position: bottom;
 }
 
 .bookNow {

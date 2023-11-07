@@ -45,14 +45,14 @@ const Reviews = () => {
           </Col>
         </Row>
       </Container> */}
-      <Container className="container text-center mt-5">
+      {/* <Container className="container text-center mt-5">
         <Row className="row">
           <Carousel fade>
             <Carousel.Item className="d-flex gap-2">
-              <Col md={4}>
+              <Col>
                 <div className={styles.singleBox}></div>
                 <div className={styles.imgArea}>
-                  <img src={kayh} className={styles.kayh} />
+                  <img src={kayh} />
                 </div>
                 <div className={styles.imgText}>
                   <h2>Kayh</h2>
@@ -63,10 +63,10 @@ const Reviews = () => {
                   </p>
                 </div>
               </Col>
-              <Col md={4}>
+              <Col>
                 <div className={styles.singleBox}></div>
                 <div className={styles.imgArea}>
-                  <img src={russ} className={styles.russ} />
+                  <img src={russ} />
                 </div>
                 <div className={styles.imgText}>
                   <h2>Russ</h2>
@@ -76,10 +76,10 @@ const Reviews = () => {
                   </p>
                 </div>
               </Col>
-              <Col md={4}>
+              <Col>
                 <div className={styles.singleBox}></div>
                 <div className={styles.imgArea}>
-                  <img src={pao} className={styles.pao} />
+                  <img src={pao} />
                 </div>
                 <div className={styles.imgText}>
                   <h2>Pao</h2>
@@ -91,13 +91,39 @@ const Reviews = () => {
               </Col>
             </Carousel.Item>
             <Carousel.Item className="d-flex gap-2">
-              <Col md={4}>
+              <Col>
                 <div className={styles.singleBox}></div>
                 <div className={styles.imgArea}>
-                  <img src={pao} className={styles.pao} />
+                  <img src={pao} />
                 </div>
                 <div className={styles.imgText}>
-                  <h2>Person four</h2>
+                  <h2>Apollo</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aliquid, consectetur!
+                  </p>
+                </div>
+              </Col>
+              <Col>
+                <div className={styles.singleBox}></div>
+                <div className={styles.imgArea}>
+                  <img src={kayh} />
+                </div>
+                <div className={styles.imgText}>
+                  <h2>Schye</h2>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Et, mollitia!
+                  </p>
+                </div>
+              </Col>
+              <Col>
+                <div className={styles.singleBox}></div>
+                <div className={styles.imgArea}>
+                  <img src={russ} />
+                </div>
+                <div className={styles.imgText}>
+                  <h2>Ike</h2>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Voluptates quasi corrupti neque consequuntur, excepturi
@@ -105,27 +131,92 @@ const Reviews = () => {
                   </p>
                 </div>
               </Col>
-              <Col md={4}>
-                <div className={styles.singleBox}></div>
-                <div className={styles.imgArea}>
-                  <img src={kayh} className={styles.kayh} />
-                </div>
+            </Carousel.Item>
+          </Carousel>
+        </Row>
+      </Container> */}
+
+      {/* ** DUPLICATE FOR TESTING** */}
+
+      <Container className="container text-center mt-5">
+        <Row className="row">
+          <Carousel fade>
+            <Carousel.Item className="d-flex gap-2">
+              <Col>
                 <div className={styles.imgText}>
-                  <h2>Person five</h2>
+                  <div className={styles.singleBox}></div>
+                  <div className={styles.imgArea}>
+                    <img src={kayh} />
+                  </div>
+                  <h2>Kayh</h2>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptates quasi corrupti neque consequuntur, excepturi
-                    enim.
+                    Their punctual service, friendly staff, and well-maintained
+                    buses ensure a comfortable and stress-free travel
+                    experience.
                   </p>
                 </div>
               </Col>
-              <Col md={4}>
-                <div className={styles.singleBox}></div>
-                <div className={styles.imgArea}>
-                  <img src={russ} className={styles.russ} />
-                </div>
+              <Col>
                 <div className={styles.imgText}>
-                  <h2>Person six</h2>
+                  <div className={styles.singleBox}></div>
+                  <div className={styles.imgArea}>
+                    <img src={russ} />
+                  </div>
+                  <h2>Russ</h2>
+                  <p>
+                    Driver was outstanding! Professional and friendly as he
+                    ensured a smooth and safe journey.
+                  </p>
+                </div>
+              </Col>
+              <Col>
+                <div className={styles.imgText}>
+                  <div className={styles.singleBox}></div>
+                  <div className={styles.imgArea}>
+                    <img src={pao} />
+                  </div>
+                  <h2>Pao</h2>
+                  <p>
+                    Ticket price is reasonable. A remarkable choice for
+                    cost-conscious travelers seeking peace of mind on the road.
+                  </p>
+                </div>
+              </Col>
+            </Carousel.Item>
+            <Carousel.Item className="d-flex gap-2">
+              <Col>
+                <div className={styles.imgText}>
+                  <div className={styles.singleBox}></div>
+                  <div className={styles.imgArea}>
+                    <img src={pao} />
+                  </div>
+                  <h2>Apollo</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aliquid, consectetur!
+                  </p>
+                </div>
+              </Col>
+              <Col>
+                <div className={styles.imgText}>
+                  <div className={styles.singleBox}></div>
+                  <div className={styles.imgArea}>
+                    <img src={kayh} />
+                  </div>
+                  <h2>Schye</h2>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Et, mollitia!
+                  </p>
+                </div>
+              </Col>
+              <Col>
+                <div className={styles.imgText}>
+                  <div className={styles.singleBox}></div>
+                  <div className={styles.imgArea}>
+                    <img src={russ} />
+                  </div>
+                  <h2>Ike</h2>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Voluptates quasi corrupti neque consequuntur, excepturi
