@@ -1,1 +1,11 @@
+.search {
+  background-color: #bd5604 !important;
+  border: #bd5604 !important;
+  font-size: 20px !important;
+}
 
+.search:hover {
+  background-color: #fff !important;
+  border: #bd5604 !important;
+  color: #bd5604 !important;
+}
