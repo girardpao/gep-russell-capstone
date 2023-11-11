@@ -1,5 +1,5 @@
 .hero {
-  background-image: url(../assets/lion-head.jpg);
+  background-image: url(../assets/sunflower.jpg);
   height: 500px;
   display: flex;
   align-items: center;
@@ -10,6 +10,6 @@
 }
 
 #heroText {
-  color: #424242;
+  color: #fff;
   font-weight: 700;
 }

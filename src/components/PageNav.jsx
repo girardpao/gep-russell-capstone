@@ -22,10 +22,10 @@ const PageNav = () => {
         />
         <Navbar.Collapse id="navbarScroll">
           <Nav className="ms-auto my-2">
-            <Nav.Link as={Link} to="/schedule">
+            <Nav.Link as={Link} to="/schedule" className={styles.navLinks}>
               Schedule
             </Nav.Link>
-            <Nav.Link as={Link} to="/contactUs">
+            <Nav.Link as={Link} to="/contactUs" className={styles.navLinks}>
               Contact Us
             </Nav.Link>
             <Button variant="dark" as={Link} to="/booking">

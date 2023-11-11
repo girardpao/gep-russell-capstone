@@ -71,6 +71,6 @@
   width: 100%;
 }
 
-carousel .carousel-indicators {
+div.carousel-indicators {
   display: none !important;
 }
