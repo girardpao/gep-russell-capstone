@@ -81,7 +81,7 @@ const bookingForm = () => {
               <Form.Control
                 type="number"
                 min={1}
-                max={30}
+                max={10}
                 aria-label="Date"
                 aria-describedby="inputGroup-sizing-default"
               />
