@@ -1,17 +1,14 @@
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
-import InputGroup from "react-bootstrap/InputGroup";
+import { Container, Row, Col, Form, Button, InputGroup } from "react-bootstrap";
+import http from "../lib/http";
 import styles from "./Booking-form.module.css";
 
 const bookingForm = () => {
+  const api = http();
   return (
     <div>
       <Container className={styles.bookingContainer}>
-        <Row>
-          <Col>
+        <Row className="">
+          <Col xs={12} lg={3}>
             <InputGroup className="mb-3">
               <InputGroup.Text id="inputGroup-sizing-default">
                 From
@@ -25,7 +22,7 @@ const bookingForm = () => {
               </Form.Select>
             </InputGroup>
           </Col>
-          <Col>
+          <Col xs={12} lg={3}>
             <InputGroup className="mb-3">
               <InputGroup.Text id="inputGroup-sizing-default">
                 To
@@ -39,29 +36,7 @@ const bookingForm = () => {
               </Form.Select>
             </InputGroup>
           </Col>
-          {/* <Col>
-            <Form.Group className="mb-3">
-              <Form.Select>
-                <option>-- Choose --</option>
-                <option>Baguio</option>
-                <option>Cubao</option>
-                <option>Pasay</option>
-                <option>Tuguegaro</option>
-              </Form.Select>
-            </Form.Group>
-          </Col> */}
-          {/* <Col>
-            <Form.Group className="mb-3">
-              <Form.Select>
-                <option>-- Choose --</option>
-                <option>Baguio</option>
-                <option>Cubao</option>
-                <option>Pasay</option>
-                <option>Tuguegaro</option>
-              </Form.Select>
-            </Form.Group>
-          </Col> */}
-          <Col>
+          <Col xs={12} lg={3}>
             <InputGroup className="mb-3">
               <InputGroup.Text id="inputGroup-sizing-default">
                 Date
@@ -73,7 +48,7 @@ const bookingForm = () => {
               />
             </InputGroup>
           </Col>
-          <Col>
+          <Col xs={12} lg={3}>
             <InputGroup className="mb-3">
               <InputGroup.Text id="inputGroup-sizing-default">
                 Passengers

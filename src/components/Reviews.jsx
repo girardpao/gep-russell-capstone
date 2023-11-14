@@ -143,85 +143,93 @@ const Reviews = () => {
           <Carousel fade>
             <Carousel.Item className="d-flex gap-2">
               <Col>
-                <div className={styles.imgText}>
-                  <div className={styles.singleBox}></div>
-                  <div className={styles.imgArea}>
-                    <img src={kayh} />
-                  </div>
-                  <h2>Kayh</h2>
-                  <p>
-                    Their punctual service, friendly staff, and well-maintained
-                    buses ensure a comfortable and stress-free travel
-                    experience.
-                  </p>
-                </div>
-              </Col>
-              <Col>
-                <div className={styles.imgText}>
-                  <div className={styles.singleBox}></div>
-                  <div className={styles.imgArea}>
-                    <img src={russ} />
-                  </div>
-                  <h2>Russ</h2>
-                  <p>
-                    Driver was outstanding! Professional and friendly as he
-                    ensured a smooth and safe journey.
-                  </p>
-                </div>
-              </Col>
-              <Col>
-                <div className={styles.imgText}>
-                  <div className={styles.singleBox}></div>
+                <div className={styles.singleBox}>
                   <div className={styles.imgArea}>
                     <img src={pao} />
                   </div>
-                  <h2>Pao</h2>
-                  <p>
-                    Ticket price is reasonable. A remarkable choice for
-                    cost-conscious travelers seeking peace of mind on the road.
-                  </p>
+                  <div className={styles.imgText}>
+                    <h2>Apollo</h2>
+                    <p>
+                      Ticket price is reasonable. A remarkable choice for
+                      cost-conscious travelers seeking peace of mind on the
+                      road.
+                    </p>
+                  </div>
+                </div>
+              </Col>
+              <Col>
+                <div className={styles.singleBox}>
+                  <div className={styles.imgArea}>
+                    <img src={kayh} />
+                  </div>
+                  <div className={styles.imgText}>
+                    <h2>Schye</h2>
+                    <p>
+                      Their punctual service, friendly staff, and
+                      well-maintained buses ensure a comfortable and stress-free
+                      travel experience.
+                    </p>
+                  </div>
+                </div>
+              </Col>
+              <Col>
+                <div className={styles.singleBox}>
+                  <div className={styles.imgArea}>
+                    <img src={russ} />
+                  </div>
+                  <div className={styles.imgText}>
+                    <h2>Ike</h2>
+                    <p>
+                      Driver was outstanding! Professional and friendly as he
+                      ensured a smooth and safe journey.
+                    </p>
+                  </div>
                 </div>
               </Col>
             </Carousel.Item>
             <Carousel.Item className="d-flex gap-2">
               <Col>
-                <div className={styles.imgText}>
-                  <div className={styles.singleBox}></div>
-                  <div className={styles.imgArea}>
-                    <img src={pao} />
-                  </div>
-                  <h2>Apollo</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Aliquid, consectetur!
-                  </p>
-                </div>
-              </Col>
-              <Col>
-                <div className={styles.imgText}>
-                  <div className={styles.singleBox}></div>
+                <div className={styles.singleBox}>
                   <div className={styles.imgArea}>
                     <img src={kayh} />
                   </div>
-                  <h2>Schye</h2>
-                  <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Et, mollitia!
-                  </p>
+                  <div className={styles.imgText}>
+                    <h2>Kayh</h2>
+                    <p>
+                      Ticket price is reasonable. A remarkable choice for
+                      cost-conscious travelers seeking peace of mind on the
+                      road.
+                    </p>
+                  </div>
                 </div>
               </Col>
               <Col>
-                <div className={styles.imgText}>
-                  <div className={styles.singleBox}></div>
+                <div className={styles.singleBox}>
                   <div className={styles.imgArea}>
                     <img src={russ} />
                   </div>
-                  <h2>Ike</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptates quasi corrupti neque consequuntur, excepturi
-                    enim.
-                  </p>
+                  <div className={styles.imgText}>
+                    <h2>Russ</h2>
+                    <p>
+                      Their punctual service, friendly staff, and
+                      well-maintained buses ensure a comfortable and stress-free
+                      travel experience.
+                    </p>
+                  </div>
+                </div>
+              </Col>
+              <Col>
+                <div className={styles.singleBox}>
+                  <div className={styles.imgArea}>
+                    <img src={pao} />
+                  </div>
+                  <div className={styles.imgText}>
+                    <h2>Pao</h2>
+                    <p>
+                      Driver was outstanding! Professional and friendly as he
+                      ensured a smooth and safe journey.
+                    </p>
+                  </div>
                 </div>
               </Col>
             </Carousel.Item>

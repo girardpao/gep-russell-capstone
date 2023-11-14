@@ -17,7 +17,7 @@ const PageNav = () => {
           className={styles.nav}
           id={styles.mobileNav}
         />
-        <Navbar.Collapse id="navbarScroll">
+        <Navbar.Collapse id="navbarScroll" className="text-center">
           <Nav className="ms-auto my-2">
             <Nav.Link as={Link} to="/schedule" className={styles.navLinks}>
               Schedule

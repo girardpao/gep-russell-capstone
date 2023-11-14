@@ -1,5 +1,4 @@
-import Container from "react-bootstrap/Container";
-import Table from "react-bootstrap/Table";
+import { Container, Table, Row, Col } from "react-bootstrap";
 import Sched from "../components/Schedule-hero";
 
 const Schedule = () => {
@@ -400,6 +399,155 @@ const Schedule = () => {
             </tr>
           </tbody>
         </Table>
+      </Container>
+      <Container>
+        <Row>
+          <h3>Daily Departures</h3>
+        </Row>
+        <Row className="cubaoBaguio">
+          <Col sm={12} md={6} className="leftCol">
+            <Row>
+              <h4>Cubao to Baguio</h4>
+            </Row>
+            <Row>
+              <Col>2:00 AM </Col>
+              <Col>Regular </Col>
+              <Col>600</Col>
+            </Row>
+            <Row>
+              <Col>4:00 AM </Col>
+              <Col>Premium</Col>
+              <Col>700</Col>
+            </Row>
+            <Row>
+              <Col>6:00 AM </Col>
+              <Col>P2P</Col>
+              <Col>900</Col>
+            </Row>
+            <Row>
+              <Col>4:00 PM </Col>
+              <Col>Regular </Col>
+              <Col>600</Col>
+            </Row>
+            <Row>
+              <Col>6:00 PM </Col>
+              <Col>Premium</Col>
+              <Col>700</Col>
+            </Row>
+            <Row>
+              <Col>8:00 PM </Col>
+              <Col>P2P</Col>
+              <Col>900</Col>
+            </Row>
+          </Col>
+          <Col sm={12} md={6} className="rightCol">
+            <Row>
+              <h4>Baguio to Cubao</h4>
+            </Row>
+            <Row>
+              <Col>9:00 AM</Col>
+              <Col>Regular </Col>
+              <Col>600</Col>
+            </Row>
+            <Row>
+              <Col>11:00 AM</Col>
+              <Col>Premium</Col>
+              <Col>700</Col>
+            </Row>
+            <Row>
+              <Col>1:00 PM</Col>
+              <Col>P2P</Col>
+              <Col>900</Col>
+            </Row>
+            <Row>
+              <Col>11:00 PM</Col>
+              <Col>Regular </Col>
+              <Col>600</Col>
+            </Row>
+            <Row>
+              <Col>1:00 AM</Col>
+              <Col>Premium</Col>
+              <Col>700</Col>
+            </Row>
+            <Row>
+              <Col>3:00 AM</Col>
+              <Col>P2P</Col>
+              <Col>900</Col>
+            </Row>
+          </Col>
+        </Row>
+        <Row className="pasayBaguio">
+          <Col sm={12} md={6} className="leftCol">
+            <Row>
+              <h4>Pasay to Baguio</h4>
+            </Row>
+            <Row>
+              <Col>4:00 AM</Col>
+              <Col>Regular </Col>
+              <Col>600</Col>
+            </Row>
+            <Row>
+              <Col>6:00 AM</Col>
+              <Col>Premium</Col>
+              <Col>700</Col>
+            </Row>
+            <Row>
+              <Col>8:00 AM</Col>
+              <Col>P2P</Col>
+              <Col>900</Col>
+            </Row>
+            <Row>
+              <Col>6:00 PM</Col>
+              <Col>Regular</Col>
+              <Col>600</Col>
+            </Row>
+            <Row>
+              <Col>8:00 PM</Col>
+              <Col>Premium</Col>
+              <Col>700</Col>
+            </Row>
+            <Row>
+              <Col>10:00 PM</Col>
+              <Col>P2P</Col>
+              <Col>900</Col>
+            </Row>
+          </Col>
+          <Col sm={12} md={6} className="rightCol">
+            <Row>
+              <h4>Baguio to Pasay</h4>
+            </Row>
+            <Row>
+              <Col>2:00 AM </Col>
+              <Col>Regular </Col>
+              <Col>600</Col>
+            </Row>
+            <Row>
+              <Col>4:00 AM </Col>
+              <Col>Premium</Col>
+              <Col>700</Col>
+            </Row>
+            <Row>
+              <Col>6:00 AM </Col>
+              <Col>P2P</Col>
+              <Col>900</Col>
+            </Row>
+            <Row>
+              <Col>4:00 PM </Col>
+              <Col>Regular </Col>
+              <Col>600</Col>
+            </Row>
+            <Row>
+              <Col>6:00 PM </Col>
+              <Col>Premium</Col>
+              <Col>700</Col>
+            </Row>
+            <Row>
+              <Col>8:00 PM </Col>
+              <Col>P2P</Col>
+              <Col>900</Col>
+            </Row>
+          </Col>
+        </Row>
       </Container>
     </div>
   );
