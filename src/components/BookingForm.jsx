@@ -19,7 +19,7 @@ const BookingForm = () => {
     setBusSched(response.data.data);
   }
 
-  function search() {}
+  // function search() {}
 
   return (
     <div>
@@ -31,7 +31,7 @@ const BookingForm = () => {
                 From
               </InputGroup.Text>
               <Form.Select>
-                {/* {busSched.map((destination, index) => {
+                {busSched.map((destination, index) => {
                   return (
                     <option
                       key={index}
@@ -39,12 +39,12 @@ const BookingForm = () => {
                       label={destination.destinationFrom}
                     ></option>
                   );
-                })} */}
-                <option>-- Choose --</option>
+                })}
+                {/* <option>-- Choose --</option>
                 <option>Baguio</option>
                 <option>Cubao</option>
                 <option>Pasay</option>
-                <option>Tuguegaro</option>
+                <option>Tuguegaro</option> */}
               </Form.Select>
             </InputGroup>
           </Col>
