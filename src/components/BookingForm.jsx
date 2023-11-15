@@ -1,9 +1,26 @@
 import { Container, Row, Col, Form, Button, InputGroup } from "react-bootstrap";
-import http from "../lib/http";
 import styles from "./Booking-form.module.css";
+import { useState, useEffect } from "react";
+import http from "../lib/http";
 
-const bookingForm = () => {
-  const api = http();
+const BookingForm = () => {
+  const [busSched, setBusSched] = useState([]);
+  const [destination, setDestination] = useState();
+
+  useEffect(() => {
+    getBusSched();
+    return () => {};
+  }, []);
+
+  async function getBusSched() {
+    const api = http();
+    const response = await api.get("/buses");
+    console.log(response.data.data);
+    setBusSched(response.data.data);
+  }
+
+  function search() {}
+
   return (
     <div>
       <Container className={styles.bookingContainer}>
@@ -14,6 +31,15 @@ const bookingForm = () => {
                 From
               </InputGroup.Text>
               <Form.Select>
+                {/* {busSched.map((destination, index) => {
+                  return (
+                    <option
+                      key={index}
+                      value={destination.id}
+                      label={destination.destinationFrom}
+                    ></option>
+                  );
+                })} */}
                 <option>-- Choose --</option>
                 <option>Baguio</option>
                 <option>Cubao</option>
@@ -71,4 +97,4 @@ const bookingForm = () => {
   );
 };
 
-export default bookingForm;
+export default BookingForm;

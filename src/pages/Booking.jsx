@@ -1,5 +1,5 @@
 import BookingHero from "../components/Booking-hero";
-import BookingForm from "../components/Booking-form";
+import BookingForm from "../components/BookingForm";
 import SearchSched from "../components/SearchSched";
 const Booking = () => {
   return (
