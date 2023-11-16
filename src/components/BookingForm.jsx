@@ -1,23 +1,23 @@
 import { Container, Row, Col, Form, Button, InputGroup } from "react-bootstrap";
 import styles from "./Booking-form.module.css";
-import { useState, useEffect } from "react";
-import http from "../lib/http";
+// import { useState, useEffect } from "react";
+// import http from "../lib/http";
 
 const BookingForm = () => {
-  const [busSched, setBusSched] = useState([]);
+  // const [busSched, setBusSched] = useState([]);
   // const [destination, setDestination] = useState();
 
-  useEffect(() => {
-    getBusSched();
-    return () => {};
-  }, []);
+  // useEffect(() => {
+  //   getBusSched();
+  //   return () => {};
+  // }, []);
 
-  async function getBusSched() {
-    const api = http();
-    const response = await api.get("/buses");
-    console.log(response.data.data);
-    setBusSched(response.data.data);
-  }
+  // async function getBusSched() {
+  //   const api = http();
+  //   const response = await api.get("/buses");
+  //   console.log(response.data.data);
+  //   setBusSched(response.data.data);
+  // }
 
   // function search() {}
 
@@ -31,7 +31,7 @@ const BookingForm = () => {
                 From
               </InputGroup.Text>
               <Form.Select>
-                {busSched.map((destination, index) => {
+                {/* {busSched.map((destination, index) => {
                   return (
                     <option
                       key={index}
@@ -39,12 +39,12 @@ const BookingForm = () => {
                       label={destination.destinationFrom}
                     ></option>
                   );
-                })}
-                {/* <option>-- Choose --</option>
+                })} */}
+                <option>-- Choose --</option>
                 <option>Baguio</option>
                 <option>Cubao</option>
                 <option>Pasay</option>
-                <option>Tuguegaro</option> */}
+                <option>Tuguegaro</option>
               </Form.Select>
             </InputGroup>
           </Col>
