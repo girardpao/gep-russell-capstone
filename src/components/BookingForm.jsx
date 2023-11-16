@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import http from "../lib/http";
 
 const BookingForm = () => {
-  const [places, setBusSched] = useState([]);
+  const [places, setPlaces] = useState([]);
   // const [destination, setDestination] = useState();
 
   useEffect(() => {
@@ -16,7 +16,7 @@ const BookingForm = () => {
     const api = http();
     const response = await api.get("/places");
     console.log(response.data.data);
-    setBusSched(response.data.data);
+    setPlaces(response.data.data);
   }
 
   return (
