@@ -11,7 +11,7 @@ const About = () => {
           </Col>
         </Row>
         <Row>
-          <Col className={styles.paragraph}>
+          <Col className="px-4" id={styles.paragraph}>
             <p>
               We are dedicated to serve and rise to prominence as one of the
               leading provincial transportation operators in the country. We

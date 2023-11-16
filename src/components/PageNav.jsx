@@ -5,7 +5,7 @@ import Logo from "../assets/bus-logo.png";
 
 const PageNav = () => {
   return (
-    <Navbar expand="lg" className="bg-gradient" id={styles.navbar}>
+    <Navbar expand="lg" id={styles.navbar}>
       <Container>
         <Navbar.Brand as={Link} to="/" className={styles.logoText}>
           <img src={Logo} className={styles.parelogo} alt="Pare-logo" />
