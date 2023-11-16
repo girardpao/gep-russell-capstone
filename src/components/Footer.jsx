@@ -17,16 +17,19 @@ const Footer = () => {
         </Col>
         <Col>
           <h5 className="fw-bold">Guidelines</h5>
-          <Link to="/discountPolicy">Discount Policy</Link>
-          <p>
-            <Link
-              className={styles.terms}
-              variant="primary"
-              onClick={handleShow}
-            >
-              Terms and Conditions
+          <div>
+            <Link className={styles.guidelines} to="/discountPolicy">
+              Discount Policy
             </Link>
-          </p>
+          </div>
+          <Link
+            className={styles.guidelines}
+            variant="primary"
+            onClick={handleShow}
+          >
+            Terms and Conditions
+          </Link>
+
           <Modal show={show} onHide={handleClose}>
             <Modal.Header className={styles.modalHeader} closeButton>
               <Modal.Title>Terms and Conditions</Modal.Title>
