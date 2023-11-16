@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import http from "../lib/http";
 
 const BookingForm = () => {
-  const [busSched, setPlaces] = useState([]);
+  const [places, setPlaces] = useState([]);
   // const [destination, setDestination] = useState();
 
   useEffect(() => {
@@ -29,7 +29,7 @@ const BookingForm = () => {
                 From
               </InputGroup.Text>
               <Form.Select>
-                {busSched.map((destination, index) => {
+                {places.map((destination, index) => {
                   return (
                     <option
                       key={index}
