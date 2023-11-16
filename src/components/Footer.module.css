@@ -9,3 +9,11 @@
 #copyright {
   font-size: 0.8rem;
 }
+
+.modalHeader {
+  background-color: #7fb37f;
+}
+
+.terms {
+  text-decoration: none;
+}

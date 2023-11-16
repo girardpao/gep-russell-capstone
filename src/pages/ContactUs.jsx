@@ -1,9 +1,4 @@
-import Form from "react-bootstrap/Form";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Button from "react-bootstrap/Button";
-import Stack from "react-bootstrap/Stack";
+import { Container, Form, Row, Col, Button, Stack } from "react-bootstrap";
 import styles from "../pages/ContactUs.module.css";
 
 const ContactUs = () => {
