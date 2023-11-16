@@ -5,7 +5,7 @@ import http from "../lib/http";
 
 const BookingForm = () => {
   const [busSched, setBusSched] = useState([]);
-  const [destination, setDestination] = useState();
+  // const [destination, setDestination] = useState();
 
   useEffect(() => {
     getBusSched();

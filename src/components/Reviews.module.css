@@ -1,6 +1,7 @@
 .card {
   background-color: #004963 !important;
   border-radius: 15px !important;
+  box-shadow: 4px 4px 8px #888888;
 }
 .imgContainer {
   display: flex;
