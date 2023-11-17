@@ -5,14 +5,13 @@ import http from "../lib/http";
 
 const BookingForm = () => {
   const [places, setPlaces] = useState([]);
-  // const [destination, setDestination] = useState();
 
   useEffect(() => {
-    getBusSched();
+    getPlaces();
     return () => {};
   }, []);
 
-  async function getBusSched() {
+  async function getPlaces() {
     const api = http();
     const response = await api.get("/places");
     console.log(response.data.data);
@@ -29,6 +28,7 @@ const BookingForm = () => {
                 From
               </InputGroup.Text>
               <Form.Select>
+                <option>-- Choose --</option>
                 {places.map((destination, index) => {
                   return (
                     <option
@@ -38,11 +38,6 @@ const BookingForm = () => {
                     ></option>
                   );
                 })}
-                {/* <option>-- Choose --</option>
-                <option>Baguio</option>
-                <option>Cubao</option>
-                <option>Pasay</option>
-                <option>Tuguegaro</option> */}
               </Form.Select>
             </InputGroup>
           </Col>
@@ -53,10 +48,15 @@ const BookingForm = () => {
               </InputGroup.Text>
               <Form.Select>
                 <option>-- Choose --</option>
-                <option>Baguio</option>
-                <option>Cubao</option>
-                <option>Pasay</option>
-                <option>Tuguegaro</option>
+                {places.map((destination, index) => {
+                  return (
+                    <option
+                      key={index}
+                      value={destination.id}
+                      label={destination.place}
+                    ></option>
+                  );
+                })}
               </Form.Select>
             </InputGroup>
           </Col>

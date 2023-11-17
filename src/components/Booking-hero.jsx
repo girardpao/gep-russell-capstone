@@ -8,7 +8,7 @@ const Hero = () => {
         <Row>
           <Col>
             <h1 className="aboutTitle text-center" id={styles.heroText}>
-              PARE Bus Lines
+              Ticket Booking
             </h1>
           </Col>
         </Row>

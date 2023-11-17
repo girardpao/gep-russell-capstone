@@ -6,10 +6,10 @@ import styles from "./Policy.module.css";
 
 const Policy = () => {
   return (
-    <Container>
+    <Container className="mt-5">
       <Row>
         <Col>
-          <h1>Discount Policy</h1>
+          <h1 className="text-center">Discount Policy</h1>
         </Col>
         <Row className="my-5">
           <Col className="d-flex justify-content-center ">
@@ -22,8 +22,13 @@ const Policy = () => {
               <Card.Body>
                 <Card.Title>Person with disability</Card.Title>
                 <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the content.
+                  <p>
+                    Provide your PWD ID when buying tickets. No ID, no discount.
+                  </p>
+                  <p>
+                    Exception: PWD ID is not necessary if the disability is
+                    evident, such as when the passenger is an amputee.
+                  </p>
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -34,8 +39,9 @@ const Policy = () => {
               <Card.Body>
                 <Card.Title>Senior Citizen</Card.Title>
                 <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the content.
+                  Show a Senior Citizen ID, passport, or any other official
+                  document that verifies the holder&apos;s age as being sixty
+                  (60) years or older.
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -50,8 +56,14 @@ const Policy = () => {
               <Card.Body>
                 <Card.Title>Student</Card.Title>
                 <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the content.
+                  <p>
+                    Discount can be availed throughout the year including summer
+                    breaks, legal and special legal holidays.
+                  </p>
+                  <p>
+                    Present valid student ID or school registration card with
+                    student name, photo and name of school. No ID, no discount.
+                  </p>
                 </Card.Text>
               </Card.Body>
             </Card>

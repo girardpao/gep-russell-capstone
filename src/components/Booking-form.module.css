@@ -1,13 +1,13 @@
 .search {
-  background-color: #bd5604 !important;
-  border: 1px solid #bd5604 !important;
+  background-color: #c06316 !important;
+  border: 1px solid #c06316 !important;
   font-size: 20px !important;
 }
 
 .search:hover {
-  background-color: #fff !important;
-  border: 1px solid #bd5604 !important;
-  color: #bd5604 !important;
+  background-color: #ad4f01 !important;
+  border: 1px solid #ad4f01 !important;
+  color: #fff !important;
 }
 
 .bookingContainer {
