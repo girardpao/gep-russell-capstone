@@ -13,8 +13,15 @@ const Footer = () => {
     <footer className="py-3" id={styles.footer}>
       <Row className="text-center border-bottom pb-3" id={styles.footerContent}>
         <Col>
-          <h5>Reach Us</h5>
+          <h5 className="fw-bold">Reach Us</h5>
+          <a href="https://www.facebook.com/" target="blank">
+            <i
+              className="fa-brands fa-square-facebook"
+              id={styles.facebook}
+            ></i>
+          </a>
         </Col>
+
         <Col>
           <h5 className="fw-bold">Guidelines</h5>
           <div>

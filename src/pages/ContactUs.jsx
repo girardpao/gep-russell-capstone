@@ -54,7 +54,7 @@ const ContactUs = () => {
                 <Form.Control as="textarea" rows={3} />
               </Form.Group>
             </Form>
-            <Button variant="success">Submit</Button>
+            <Button className={styles.contactSubmit}>Submit</Button>
           </Col>
         </Row>
       </Container>

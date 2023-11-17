@@ -3,6 +3,7 @@ import Schedule from "./pages/Schedule";
 import ContactUs from "./pages/ContactUs";
 import Booking from "./pages/Booking";
 import DiscountPolicy from "./pages/DiscountPolicy";
+import Reservation from "./pages/Reservation";
 import PageNotFound from "./pages/PageNotFound";
 
 const routes = [
@@ -25,6 +26,10 @@ const routes = [
   {
     path: "discountPolicy",
     element: <DiscountPolicy />,
+  },
+  {
+    path: "reservation",
+    element: <Reservation />,
   },
   {
     path: "*",

@@ -1,5 +1,7 @@
 import { Container, Table, Button } from "react-bootstrap";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import styles from "./SearchSched.module.css";
 import http from "../lib/http";
 
 const SearchSched = () => {
@@ -34,7 +36,14 @@ const SearchSched = () => {
                 <td>{buses.bus_type}</td>
                 <td>₱{buses.price}</td>
                 <td className="text-center">
-                  <Button as="input" type="button" value="Buy Ticket" />
+                  <Button
+                    className={styles.bookTicket}
+                    as={Link}
+                    to="/reservation"
+                  >
+                    Buy Ticket
+                  </Button>
+                  {/* <Button as="input" type="button" value="Buy Ticket" /> */}
                 </td>
               </tr>
             );

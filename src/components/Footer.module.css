@@ -16,5 +16,10 @@
 
 .guidelines {
   text-decoration: none;
-  color: black;
+  color: #000;
+}
+
+#facebook {
+  font-size: 30px;
+  color: #505050;
 }
