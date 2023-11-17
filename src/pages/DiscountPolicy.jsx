@@ -1,5 +1,7 @@
+import Policy from "../components/Policy";
+
 const DiscountPolicy = () => {
-  return <div>DiscountPolicy</div>;
+  return <Policy />;
 };
 
 export default DiscountPolicy;
