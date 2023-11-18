@@ -5,18 +5,34 @@ import styles from "./SearchSched.module.css";
 import http from "../lib/http";
 
 const SearchSched = () => {
+  const api = http();
+
+  const [destinationFrom, setDestinationFrom] = useState([]);
+  const [destinationTo, setDestinationTo] = useState([]);
   const [busSched, setBusSched] = useState([]);
+
+  useEffect(() => {
+    getBuses();
+    return () => {};
+  }, []);
 
   useEffect(() => {
     getBusSched();
     return () => {};
-  }, []);
+  }, [destinationTo, destinationFrom]);
 
-  async function getBusSched() {
-    const api = http();
+  async function getBuses() {
     const response = await api.get("/buses");
-    console.log(response.data.data);
     setBusSched(response.data.data);
+  }
+  async function getBusSched() {
+    const options = {
+      params: {
+        destinationFrom: destination_from,
+        destinationTo: destination_to,
+      },
+    };
+    const response = await api.get("/buses/filter", options);
   }
   return (
     <Container>

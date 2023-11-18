@@ -25,7 +25,12 @@ const PageNav = () => {
             <Nav.Link as={Link} to="/contactUs" className={styles.navLinks}>
               Contact Us
             </Nav.Link>
-            <Button variant="dark" as={Link} to="/booking">
+            <Button
+              className={styles.bookNow}
+              as={Link}
+              to="/booking"
+              variant="primary"
+            >
               Book Now
             </Button>
           </Nav>

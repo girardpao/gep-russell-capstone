@@ -1,5 +1,6 @@
 #footer {
-  background-color: #7fb37f;
+  background-color: #3c3d3c;
+  color: #fff;
 }
 
 #footerContent {
@@ -8,6 +9,7 @@
 
 #copyright {
   font-size: 0.8rem;
+  color: #fff !important;
 }
 
 .modalHeader {
@@ -16,10 +18,10 @@
 
 .guidelines {
   text-decoration: none;
-  color: #000;
+  color: #fff;
 }
 
 #facebook {
   font-size: 30px;
-  color: #505050;
+  color: #fff;
 }

@@ -73,23 +73,7 @@ const Footer = () => {
           </Link>
         </Col>
       </Row>
-      {/* <ul className="nav justify-content-center border-bottom">
-        <li className="nav-item">
-          <Link to="/" className="nav-link px-2 text-body-secondary">
-            Home
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link to="/schedule" className="nav-link px-2 text-body-secondary">
-            Schedule
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link to="/contactUs" className="nav-link px-2 text-body-secondary">
-            Contact Us
-          </Link>
-        </li>
-      </ul> */}
+
       <p className="text-center text-body-secondary mt-3" id={styles.copyright}>
         Copyright © 2023 Pare Bus Lines
       </p>
