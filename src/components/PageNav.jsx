@@ -5,7 +5,7 @@ import Logo from "../assets/bus-logo.png";
 
 const PageNav = () => {
   return (
-    <Navbar expand="lg" id={styles.navbar}>
+    <Navbar expand="lg" id={styles.navbar} className="border-bottom">
       <Container>
         <Navbar.Brand as={Link} to="/" className={styles.logoText}>
           <img src={Logo} className={styles.parelogo} alt="Pare-logo" />
@@ -18,7 +18,7 @@ const PageNav = () => {
           id={styles.mobileNav}
         />
         <Navbar.Collapse id="navbarScroll" className="text-center">
-          <Nav className="ms-auto my-2">
+          <Nav className="ms-auto my-2 gap-">
             <Nav.Link as={Link} to="/schedule" className={styles.navLinks}>
               Schedule
             </Nav.Link>
