@@ -20,12 +20,20 @@ const ContactUs = () => {
               <div>Tel: +63 2 911 7359</div>
               <div>(Globe) +63 927 712 4349</div>
               <div>(Sun) +63 943 706 5083</div>
-              <a href="https://www.facebook.com/" target="blank">
-                <i
-                  className="fa-brands fa-square-facebook"
-                  id={styles.facebook}
-                ></i>
-              </a>
+              <div>
+                <a href="https://www.facebook.com/" target="blank">
+                  <i
+                    className="fa-brands fa-square-facebook mx-2"
+                    id={styles.facebook}
+                  ></i>
+                </a>
+                <a href="https://www.instagram.com/" target="blank">
+                  <i
+                    className="fa-brands fa-square-instagram mx-2"
+                    id={styles.instagram}
+                  ></i>
+                </a>
+              </div>
             </Stack>
           </Col>
           <Col xs={12} md={6}>

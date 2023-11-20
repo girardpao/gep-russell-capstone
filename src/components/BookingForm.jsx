@@ -5,6 +5,7 @@ import http from "../lib/http";
 
 const BookingForm = () => {
   const [places, setPlaces] = useState([]);
+  // const [destination, setDestination] = useState([]);
 
   useEffect(() => {
     getPlaces();
@@ -14,20 +15,27 @@ const BookingForm = () => {
   async function getPlaces() {
     const api = http();
     const response = await api.get("/places");
-    console.log(response.data.data);
+    // console.log(response.data.data);
     setPlaces(response.data.data);
   }
+
+  // function selectPlace(e) {
+  //   console.log(e.currentTarget.value);
+  // }
 
   return (
     <div>
       <Container className={styles.bookingContainer}>
         <Row className="">
           <Col xs={12} lg={3}>
-            <InputGroup className="mb-3">
-              <InputGroup.Text id="inputGroup-sizing-default">
-                From
-              </InputGroup.Text>
-              <Form.Select>
+            <InputGroup className="mb-3" id="destination">
+              <InputGroup.Text id="destination">From</InputGroup.Text>
+              <Form.Select
+                id="destination"
+                name="destination"
+                aria-label="destination"
+                // onChange={(e) => setPlaces(e.currentTarget.value)}
+              >
                 <option>-- Choose --</option>
                 {places.map((destination, index) => {
                   return (
@@ -42,7 +50,11 @@ const BookingForm = () => {
             </InputGroup>
           </Col>
           <Col xs={12} lg={3}>
-            <InputGroup className="mb-3">
+            <InputGroup
+              className="mb-3"
+              id="destination"
+              // onChange={(e) => setPlaces(e.currentTarget.value)}
+            >
               <InputGroup.Text id="inputGroup-sizing-default">
                 To
               </InputGroup.Text>

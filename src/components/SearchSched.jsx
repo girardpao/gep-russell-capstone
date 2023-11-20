@@ -28,11 +28,12 @@ const SearchSched = () => {
   async function getBusSched() {
     const options = {
       params: {
-        destinationFrom: destination_from,
-        destinationTo: destination_to,
+        destination_from: destinationFrom,
+        destination_to: destinationTo,
       },
     };
     const response = await api.get("/buses/filter", options);
+    console.log(response);
   }
   return (
     <Container>

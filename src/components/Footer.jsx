@@ -13,11 +13,18 @@ const Footer = () => {
     <footer className="py-3" id={styles.footer}>
       <Row className="text-center border-bottom pb-3" id={styles.footerContent}>
         <Col>
-          <h5 className="fw-bold">Reach Us</h5>
+          <h5 className="fw-bold">Socials</h5>
+
           <a href="https://www.facebook.com/" target="blank">
             <i
-              className="fa-brands fa-square-facebook"
+              className="fa-brands fa-square-facebook mx-2"
               id={styles.facebook}
+            ></i>
+          </a>
+          <a href="https://www.instagram.com/" target="blank">
+            <i
+              className="fa-brands fa-square-instagram mx-2"
+              id={styles.instagram}
             ></i>
           </a>
         </Col>
@@ -52,13 +59,13 @@ const Footer = () => {
                 care and safekeeping of their belongings.
               </p>
 
-              <p>
+              <p className="fw-bold">
                 The company will not return or replace lost passenger tickets
                 for any reason. In such cases, passengers will be obligated to
                 purchase a new ticket and pay the applicable fare.
               </p>
 
-              <p>
+              <p className="fw-bold">
                 Any modification of the information provided on the reverse side
                 of this reservation ticket will result in rendering it null and
                 void.
